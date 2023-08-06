@@ -129,11 +129,11 @@ while game:
                     rel_time = True
                 
                 
-            if e.key == K_EQUALS and volume_level<1:
+            if e.key == K_KP_PLUS and volume_level<1:
                 volume_level  = round(volume_level + 0.1, 1)
                 mixer.music.set_volume(volume_level)
                 mixer.Sound.set_volume(fire_sound, volume_level)
-            if e.key == K_MINUS and volume_level > 0: 
+            if e.key == K_KP_MINUS and volume_level > 0: 
                 volume_level = round(volume_level - 0.1, 1)
                 mixer.music.set_volume(volume_level)
                 mixer.Sound.set_volume(fire_sound, volume_level)
