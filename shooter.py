@@ -165,7 +165,7 @@ while game:
         if rel_time == True:
             now_time = timer()
             if now_time - last_time < 3:
-                mw.blit(text_font1.render("Зачекайте!!! Перезарядження...", 1, (150,0,0)), (220,330))
+                mw.blit(text_font1.render("Зачекайте!!! Перезарядження...", 1, (150,0,0)), (120,330))
             else:
                 num_fire = 0
                 rel_time = False
